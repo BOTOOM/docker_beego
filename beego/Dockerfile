@@ -1,4 +1,4 @@
-FROM golang:1.5.1
+FROM golang
 
 MAINTAINER Albert Wang 
 
@@ -6,3 +6,4 @@ MAINTAINER Albert Wang
 
 RUN go get -u github.com/astaxie/beego
 RUN go get -u github.com/beego/bee
+
