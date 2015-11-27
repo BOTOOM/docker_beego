@@ -1,12 +1,13 @@
-FROM golang
+FROM grayzone/golang
 
 MAINTAINER Albert Wang 
 
 #Install beego & bee
 
-RUN go get -u github.com/astaxie/beego
-RUN go get -u github.com/beego/bee
-<<<<<<< HEAD
+# ENV GOPATH /go
+# ENV PATH $GOPATH/bin:$PATH
 
-=======
->>>>>>> d676a214330e8f8662c87210bcf6533237a37740
+
+RUN go get -u -v github.com/astaxie/beego
+RUN go get -u -v github.com/beego/bee
+

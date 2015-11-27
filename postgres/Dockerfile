@@ -31,5 +31,5 @@ VOLUME ["/var/lib/pgsql/data"]
 
 EXPOSE 5432
 
-CMD ["/usr/bin/pg_ctl", "-D", "/var/lib/pgsql/data"]
+CMD ["/usr/bin/postgres", "-D", "/var/lib/pgsql/data"]
 
