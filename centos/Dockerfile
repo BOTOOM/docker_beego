@@ -20,4 +20,4 @@ RUN yum -y install sudo epel-release && yum clean all
 #	rm -f /lib/systemd/system/basic.target.wants/*;\
 #	rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-CMD [“/usr/sbin/init”]
+# CMD [“/usr/sbin/init”]
