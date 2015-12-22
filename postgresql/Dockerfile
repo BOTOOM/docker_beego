@@ -9,7 +9,8 @@ MAINTAINER Albert Wang
 
 #RUN yum -y update; yum clean all
 #RUN yum -y install sudo epel-release; yum clean all
-RUN yum -y install postgresql-server postgresql postgresql-contrib supervisor; yum clean all
+RUN yum -y install postgresql-server postgresql postgresql-contrib supervisor && yum clean all
+RUN yum -y update && yum clean all 
 
 ADD ./postgresql-setup.sh /usr/bin/postgresql-setup.sh
 ADD ./supervisord.conf /etc/supervisord.conf
